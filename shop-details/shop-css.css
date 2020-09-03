@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+.container{
+	height: 500px;
+}
+
+#s1{
+	background-color: #40E0D0;
+	height:50%;
+	margin-bottom:5px;
+	text-align: center;
+	margin-top: 5px; 
+	border-width:5px;
+	border-style: outset;
+	border-color: #40E0D0;
+}
+#s2{
+	background-color: #40E0D0;
+	border: 5px outset #40E0D0;
+	height:30px;
+	margin:0; 
+	color: white;
+	box-sizing: content-box;
+}
+#s3{
+	background-color: gray;
+	height:80%;
+	border:;
+}
+.menubutton{
+	float: right;
+	background-color: #FF4500;
+	color:white;
+	width:7%;
+	border: 1px solid black;
+	height: 30px;
+	position: relative;
+	bottom: 1px;
+	left:1px;
+	margin-left: 2px;
+	margin-top: 1px;
+	box-shadow: 1px 1px 2px black;
+	border-radius: 4px;
+	z-index: 1;
+}
+.tooltip::after{
+	content:" ";
+	border-width: 5px;
+	border-style: solid;
+	border-color:  transparent transparent black transparent;
+	position: absolute;
+	bottom:100%;
+	left:50%;
+	margin-left: -5px;
+}
+
+.tooltip{
+	visibility: hidden ;
+	opacity: 70%;
+	background-color: black;
+	color:white;
+	width: 100%;
+	text-align: center;
+	padding:5px;
+	border-radius:6px;
+	position:absolute;
+	top:120%;
+	margin-left: 
+	z-index:1;
+}
+.menubutton:hover .tooltip{
+	visibility: visible;
+}
+.menubutton:hover {
+	background-color:#DC143C;
+	cursor: pointer;
+}
+#m1{
+	text-align: center;
+	width:100%;
+	margin-top:3px;
+}
+#m3{
+	text-align: center;
+	width:100%;
+	margin-top:3px;
+}
+#m2{
+	text-align: center;
+	width:100%;
+	margin-top: 3px;
+}
+h2{
+	color: #FF4500;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 50px;
+	position:relative;
+	top:40%;
+	text-shadow: 1px 1px 3px black;
+
+}
