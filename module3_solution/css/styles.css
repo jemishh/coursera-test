@@ -1,20 +1,19 @@
 *{
 	box-sizing: border-box;
+	font-family:  Comic Sans MS, Comic Sans, cursive;
 }
 
-body{
-	background-color: ;
-}
-#header-nav{
+/*nav bar*/
+nav.navbar{
+	width:100%;
+	margin:auto;
 	background-color: gray;
+	}
+header nav.navbar{
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
 	border-radius: 0;
-	border:0;
-}
-
-.navbar-brand h1{
-	margin:0; 
-	color: red;
-}
+	}
 .navbar-brand a:hover, .navbar-brand a:focus{
 	text-decoration: none;
 	text-decoration-color: none;
@@ -23,8 +22,112 @@ body{
 .navbar-brand{
 	margin-bottom: 20px;
 }
-.nav-list{
-margin-top: 10px;
-background-color: gray;
+.navbar-brand h1{
+	font-weight:900;
+	margin:0; 
+	color: black;
+	text-shadow: 2px 1px 5px #4d4d4d;
 }
 
+
+/*menu button*/
+.navbar-header button.navbar-toggle{
+	width:40px;
+	height: 40px;
+	margin-top: 15px;
+	margin-right:20px;
+	margin-left:auto;
+	background-color: gray;
+	border:2px solid black; 
+	box-shadow:2px 2px 3px #4d4d4d;
+}
+span.icon-bar{
+border: 2px solid black;
+box-shadow: 1px 1px 1px #4d4d4d;
+}
+#c1 button.navbar-toggle:hover{
+
+	height:42px;
+	width:42px;
+	transition-duration: 0.3s; 
+}
+
+/*menu button options*/
+ul.navbar-nav li{
+	border: 1px solid black;
+	color:blue;
+	width:100%;
+	
+	margin-left: auto;
+	margin-right:auto;
+	font-size: 1.5em;
+	border-left:3px solid black;
+	border-right:3px solid black;
+}
+li:hover, li a:hover{
+	background-color: gray;
+	font-size:24px;
+	transition: all 0.5s;
+	color:black;
+}
+#l1 a:hover,#l2 a:hover,#l3 a:hover{
+	color:black;
+	font-weight: 500;
+	cursor: default;
+	text-decoration: none;
+	text-decoration-color: none: 
+}
+ul.navbar-nav{
+	padding:;
+	margin-top:0;
+	margin-bottom:0;
+	background-color: white;
+}
+a{
+	text-shadow: 1px 1px 2px #4d4d4d;
+}
+#l1{
+	border-top:3px solid black;
+}
+
+
+/*content*/
+section{
+	background-color: gray;
+	height: 1000px;
+	width: 100%;
+	overflow: hidden;
+}
+#main-content{
+	margin-left: 5px;
+	margin-right: 5px;
+	width:100%;
+	padding:0px;
+}
+p{
+	color: black;
+	font-size:18px;
+	padding: 20px;
+}
+.row{
+	width:100%;
+	margin:0;
+}
+h2{
+	font-weight: bold;
+}
+h3{
+	font-weight: bold;
+	padding:10px 0px 0px 0px; 
+}
+
+
+
+@media (max-width: 767px)
+{
+	section{
+		width:75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
